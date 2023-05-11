@@ -60,8 +60,8 @@ export default class Timeline {
     }
     const geo = value.replace(/[[\]\s+]/g, '');
     return {
-      latitude: Number(geo.split(',')[1]),
-      longitude: Number(geo.split(',')[0]),
+      latitude: Number(geo.split(',')[0]),
+      longitude: Number(geo.split(',')[1]),
     };
   }
 
